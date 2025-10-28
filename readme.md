@@ -1,6 +1,4 @@
 
-  GNU nano 8.6                                                                                        readme.md
-
 # The Alek Ofice
 The Alek Office is an office suite, focused on privacy and [steganograpy](https://en.wikipedia.org/wiki/Steganography). developed by [Alek](https://aleklab.cloud).
 The cloud version currently supports CRDT collaborative document editing/sharing, and E2E document editing/sharing, as well as a PDF steganography tool.
