@@ -51,8 +51,8 @@ const hocuspocus = new Hocuspocus({
   extensions: [
 
     new Redis({
-      host:'redis://default:urzsYouRXKUToMtBG5kT8Ds2QZbH4rqt@redis-19498.crce219.us-east-1-4.ec2.redns.redis-cloud.com',
-      port:19498
+      host:process.env.REDISURL?process.env.REDISURL.split('.com:')[0]+'.com':'redis://redis',
+      port:process.env.REDISURL?process.env.REDISURL.split('.com:')[1]:6379
     }),
     
     new Database({
@@ -121,3 +121,4 @@ export const mountRouter = (app) => {
 
 
 export default router
+
