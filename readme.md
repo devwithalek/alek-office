@@ -39,17 +39,17 @@ You can run only your desired services internally, using the docker compose synt
 ```
 docker compose up alekoffice nginx
 ```
-This will only  spin up the main process, and nginx serving the static files. By doing this, the app will rely on the services whom urls you specified on the .env file.
+This will only  spin up the main process, and nginx serving the static files at port 3000. By doing this, the app will rely on the services whom urls you specified on the .env file.
 ##### Example 2, external reverse proxy:
 ```
 docker compose up alekoffice mongodb redis
 ```
-This will only  spin up the main process, and an instance of both Redis and Mongo. By doing this, the app will rely on your own reverse proxy to serve the static files and routing oncoming traffic into the app.
+This will only  spin up the main process, and an instance of both Redis and Mongo. By doing this, the app will be served at port 8000, and rely on your own reverse proxy to serve the static files and routing oncoming traffic into the app.
 ##### Example 3, standalone app:
 ```
 docker compose up alekoffice
 ```
-This will only  spin up the main process at port 3000, by doing this you can use your own Mongo and Redis isntances, as well as your desired reverse proxy to route the app and the static files; Good luck!
+This will only  spin up the main process at port 8000, by doing this you can use your own Mongo and Redis isntances, as well as your desired reverse proxy to route the app and the static files; Good luck!
 
 
 ## Coming soon
